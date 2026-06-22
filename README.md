@@ -1,10 +1,11 @@
+
 # Development Workflow Skills
 
 [简体中文](README.zh-CN.md)
 
 Reusable, verified development workflows extracted from real project setup work.
 
-This repository is a place to preserve repeatable engineering workflows as skills, scripts, and references. Some skills are packaged for Codex, but the repository is not limited to Codex: the bundled scripts can also be run directly from a terminal, adapted by other AI coding agents, or integrated into a team's internal project bootstrap process.
+This repository is a place to preserve repeatable engineering workflows as skills, scripts, and references. Some skills are packaged for Codex, but the repository is not limited to Codex: the bundled scripts can also run directly in the terminal, be reused by other AI coding agents, or be integrated into team processes.
 
 ## Why Use This
 
@@ -134,4 +135,4 @@ scripts/verify.sh
 
 ## License
 
-MIT
+[MIT](LICENSE)
