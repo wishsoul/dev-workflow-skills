@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tuist Apple Bootstrap"
+  short_description: "Bootstrap Tuist Apple app projects"
+  default_prompt: "Use $tuist-apple-bootstrap to initialize a Tuist Apple app project."
