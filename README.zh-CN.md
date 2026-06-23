@@ -45,6 +45,18 @@
 - 集成 codebase-memory
 - 在项目真正需要前添加第三方依赖
 
+### `prd-to-mermaid-user-flow`
+
+用于把 PRD、产品需求、功能描述和交互说明转成可渲染的 Mermaid UX 用户流程图。
+
+它会帮助 Codex：
+
+- 识别用户核心目标与入口
+- 从需求中提取 Happy Path
+- 梳理用户可见的页面、动作、判断、结果和异常
+- 按阶段、任务或角色拆分复杂流程
+- 保持 Mermaid 语法一致，并适合作为 Figma 复现基础
+
 ## 直接使用脚本
 
 不通过 Codex 也可以直接运行生成器：
@@ -96,6 +108,12 @@ python3 /path/to/install-skill-from-github.py \
 Use $tuist-apple-bootstrap to initialize a Tuist macOS project in this repo.
 ```
 
+PRD 流程图生成示例：
+
+```text
+Use $prd-to-mermaid-user-flow to turn this PRD into a Mermaid user flow.
+```
+
 ## GitHub 发布检查
 
 发布前请检查 [docs/github-release-checklist.md](docs/github-release-checklist.md)。
@@ -116,6 +134,8 @@ Use $tuist-apple-bootstrap to initialize a Tuist macOS project in this repo.
 ```bash
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py \
   skills/tuist-apple-bootstrap
+python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py \
+  skills/prd-to-mermaid-user-flow
 ```
 
 Smoke-test 生成器：

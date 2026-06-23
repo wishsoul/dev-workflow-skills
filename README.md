@@ -46,6 +46,18 @@ It intentionally does not:
 - Add codebase-memory integration
 - Add third-party dependencies before the app needs them
 
+### `prd-to-mermaid-user-flow`
+
+Converts PRDs, product requirements, feature descriptions, and interaction specs into renderable Mermaid UX user-flow diagrams.
+
+It helps Codex:
+
+- Identify the user's core goal and entry point
+- Extract the happy path from product requirements
+- Capture user-visible pages, actions, decisions, results, and errors
+- Split complex flows by phase, task, or role
+- Keep Mermaid syntax consistent and Figma-ready
+
 ## Direct Script Usage
 
 Use the generator without Codex:
@@ -97,6 +109,12 @@ Example prompt:
 Use $tuist-apple-bootstrap to initialize a Tuist macOS project in this repo.
 ```
 
+For PRD flow generation:
+
+```text
+Use $prd-to-mermaid-user-flow to turn this PRD into a Mermaid user flow.
+```
+
 ## GitHub Release Checks
 
 Before publishing, run through [docs/github-release-checklist.md](docs/github-release-checklist.md).
@@ -117,6 +135,8 @@ Validate the skill:
 ```bash
 python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py \
   skills/tuist-apple-bootstrap
+python3 ~/.codex/skills/.system/skill-creator/scripts/quick_validate.py \
+  skills/prd-to-mermaid-user-flow
 ```
 
 Smoke-test the bundled generator:

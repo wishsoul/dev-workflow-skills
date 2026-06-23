@@ -1,0 +1,4 @@
+interface:
+  display_name: "PRD to Mermaid User Flow"
+  short_description: "Turn PRDs into UX Mermaid user flows"
+  default_prompt: "Use $prd-to-mermaid-user-flow to turn this PRD into a renderable Mermaid user flow."
